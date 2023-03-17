@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -s $CFILE -o "$(echo $CFILE |tr -d '.c').s" 
+gcc -S $CFILE -o "$(echo $CFILE |tr -d '.c').s" 
