@@ -15,7 +15,7 @@ int main(void)
 		, 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
 	int i;
 
-	for (i = 0; i < 26; i++)
+	for (i = 0; i < 53; i++)
 		putchar(alpha[i]);
 	putchar('\n');
 	return (0);
