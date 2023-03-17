@@ -12,6 +12,6 @@ int main(void)
 
 	for (i = 26; i >= 0; i--)
 		putchar(alpha_revers[i]);
-	putchsr('\n');
+	putchar('\n');
 	return (0);
 }
