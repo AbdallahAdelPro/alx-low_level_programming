@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main function
+ * main - main function
  * the code of random num
  * if the num < 0
  * print nigative
@@ -10,6 +10,7 @@
  * print 0
  * if num > 0
  * print positive
+ * Return: 0
  */
 int main(void)
 {
