@@ -1,17 +1,24 @@
 #include"main.h"
-#include<ctype.h>
 
 /**
- * _islower - prints alphabet
- *
- * @c: checks input of function
- *
+ * print_alphabet_x10 - prints alphabet
  * Return: 0
  */
-int _islower(int c)
+void print_alphabet_x10(void)
 {
-	if (islower(c) == 0)
-		return (0);
-	else
-		return (1);
+	char *sentence = "abcdefghijklmnopqrstuvwxyz";
+	int i;
+	int j = 0;
+
+	while (j < 10)
+	{
+		i = 0;
+		while (i < 26)
+		{
+			_putchar(sentence[i]);
+			i++;
+		}
+		_putchar('\n');
+	j++;
+	}
 }
