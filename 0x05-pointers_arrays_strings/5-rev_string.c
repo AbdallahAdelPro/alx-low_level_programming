@@ -2,24 +2,30 @@
 #include<unistd.h>
 
 /**
- * puts2 - print a string
+ * rev_string - print a string reversed
  *
- * @str: the string
+ * @s: the string
  *
  * Return: void
  */
-void puts2(char *str)
+void rev_string(char *s)
 {
 	int i = 0;
-	char c = str[i];
+	char c = s[i];
+	char tmp;
+	int lastIndex;
 
 	while (c != '\0')
 	{
-		if (i % 2 == 0)
-			write(1, &c, 1);
 		i++;
-		c = str[i];
+		c = s[i];
 	}
-	c = '\n';
-	write(1, &c, 1);
+	lastIndex = --i;
+	while (i  >= (lastIndex + 1) / 2)
+	{
+		tmp = s[i];
+		s[i] = s[lastIndex - i];
+		s[lastIndex - i] = tmp;
+		i--;
+	}
 }
