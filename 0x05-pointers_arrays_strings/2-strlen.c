@@ -12,5 +12,5 @@ int _strlen(char *s)
 	int len;
 
 	len = strlen(s);
-	printf("strlen(str1) :  %d\n", len );
+	printf("strlen(s) :  %d\n", len );
 }
