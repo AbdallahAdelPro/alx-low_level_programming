@@ -7,7 +7,7 @@
  * @s1: the destination of the of the string
  * @s2: the source of the string
  *
- * Return: Always 0
+ * Return: int
  */
 int _strcmp(char *s1, char *s2)
 {
@@ -18,10 +18,9 @@ int _strcmp(char *s1, char *s2)
 	for (j = 0; s2[j] != '\0'; j++)
 		;
 	if (s1 == '\0' && s2 == '\0')
-		printf("0");
+		return (0);
 	else if (s1 == '\0' && s2 != '\0')
-		printf("-15");
+		return (-15);
 	else
-		printf("15");
-	return (0);
+		return (15);
 }
