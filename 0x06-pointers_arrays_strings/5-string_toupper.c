@@ -11,7 +11,7 @@ char *string_toupper(char *s)
 {
 	int i;
 
-	for (i = 0; s[1] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		*(s + i) -= 32;
 	}
