@@ -17,10 +17,5 @@ int _strcmp(char *s1, char *s2)
 		;
 	for (j = 0; s2[j] != '\0'; j++)
 		;
-	if (s1 == '\0' && s2 == '\0')
-		return (0);
-	else if (s1 == '\0' && s2 != '\0')
-		return (-15);
-	else
-		return (15);
+	return (s1 - s2);
 }
