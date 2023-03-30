@@ -7,9 +7,11 @@
  */
 void reverse_array(int *a, int n)
 {
-	int i;
+	int i, tmp;
 
-	for (i = n; i >= 0; i--)
-		printf("%d", a[i]);
+	for (i = (n - 1); i >= 0; i--)
+		tmp = a[n - i - 1];
+		a[n - i - 1] = a[i];
+		a[i] = tmp;
 
 }
