@@ -16,9 +16,12 @@ char *_strchr(char *s, char c)
 	for (i = 0; p != '\0'; i++)
 	{
 		p = s[i];
-		if (p != c)
-			return (&p);
+		if (p == c)
+		{
+			s = &p;
+			return (s);
+		}
 	}
-	return (NULL);
+	return (0);
 
 }
