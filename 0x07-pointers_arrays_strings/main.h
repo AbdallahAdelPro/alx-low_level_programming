@@ -1,6 +1,4 @@
 #include <stdio.h>
-#ifndef FILE_HOLBERTON
-#define FILE_HOLBERTON
 
 char *_memset(char *s, char b, unsigned int n);
 char *_memcpy(char *dest, char *src, unsigned int n);
@@ -13,4 +11,3 @@ void print_diagsums(int *a, int size);
 void set_string(char **s, char *to);
 int _putchar(char c);
 
-#endif
