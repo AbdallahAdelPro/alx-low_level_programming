@@ -5,11 +5,10 @@
  *
  * @argv: the array of the string
  *
- * Return: char
+ * Return: 0
  */
-int main(int argc, char *argv[])
+int main(char *argv[])
 {
-	if (argc > 0)
 		printf("the name of the program is \"%s\".\n", argv[0]);
-	return (argv[0]);
+	return (0);
 }
