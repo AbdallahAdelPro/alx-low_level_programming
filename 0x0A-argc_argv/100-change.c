@@ -23,7 +23,8 @@ int main(int argc, char *argv[])
 	{
 		if (atoi(argv[i]) < 0)
 		{
-			;
+			printf("0\n");
+			return (0);
 		}
 		else
 		{
@@ -51,5 +52,4 @@ int main(int argc, char *argv[])
 		}
 	}
 	printf("%d\n", coins);
-	return (0);
-}
+	return (0);	}
