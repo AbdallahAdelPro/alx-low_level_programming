@@ -8,7 +8,7 @@
  * @argc: the number of argumnts
  * @argv: an array of string
  *
- * Return: 0
+ * Return: int
  */
 int main(int argc, char *argv[])
 {	int i;
@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 	{
 		if (atoi(argv[i]) < 0)
 		{
-			printf("0\n");
+			;
 		}
 		else
 		{
