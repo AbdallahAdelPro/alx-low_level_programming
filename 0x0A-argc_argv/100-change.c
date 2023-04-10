@@ -11,8 +11,7 @@
  * Return: 0
  */
 int main(int argc, char *argv[])
-{
-	int i;
+{	int i;
 	int coins, rem;
 
 	if (argc > 2)
@@ -22,7 +21,7 @@ int main(int argc, char *argv[])
 	}
 	for (i = 1; i < argc; i++)
 	{
-		if (argv[i] < 0)
+		if (atoi(argv[i]) < 0)
 		{
 			printf("0\n");
 		}
@@ -42,10 +41,10 @@ int main(int argc, char *argv[])
 					{
 						coins += rem / 2;
 						rem %= 2;
-						if (rem)
-						{
-							coins++;
-						}
+					if (rem)
+					{
+					coins++;
+					}
 					}
 				}
 			}
