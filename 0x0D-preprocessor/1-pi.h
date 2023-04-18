@@ -1,6 +1,6 @@
-#ifndef OBJECT_H
-#define OBJECT_H
+#ifndef PI_H
+#define PI_H
 
-#define SIZE 1024
+#define PI 3.14159265359
 
-#endif /*OBJECT_H*/
+#endif /*PI_H*/
