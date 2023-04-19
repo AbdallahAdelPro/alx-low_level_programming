@@ -1,7 +1,7 @@
 #include"main.h"
 
 /**
- * main - the main function
+ * print_name - print name
  *
  * @name: the pointer that point to the name
  * @f: pointer that point to the function
