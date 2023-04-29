@@ -5,17 +5,18 @@
 #include <stdio.h>
 
 /**
- * struct list - singly linked list
+ * struct listint_s - singly linked list
  *
  * @n: the element in the list
  * @next: the address for the next element
  *
+ * Return: the number of the nodes
  */
 
 typedef struct listint_s
 {
-        int n;
-        struct listint_s *next;
+	int n;
+	struct listint_s *next;
 } listint_t;
 
 size_t print_listint(const listint_t *h);
