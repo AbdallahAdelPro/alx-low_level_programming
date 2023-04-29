@@ -11,7 +11,7 @@ size_t print_listint(const listint_t *h)
 {
 
 	listint_t *head = h;
-	int count = 0;
+	size_t count = 0;
 
 	while (head != NULL)
 	{
