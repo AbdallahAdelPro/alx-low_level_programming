@@ -1,5 +1,6 @@
 #ifndef LISTS_H
 #define LISTS_H
+
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -27,10 +28,10 @@ listint_t *find_listint_loop(listint_t *head);
  *
  */
 
-typedef struct list
+typedef struct listint_s
 {
 	int n;
-	struct list *next;
+	struct listint_s *next;
 } listint_t;
 
 #endif
